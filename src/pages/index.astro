@@ -10,7 +10,7 @@ const title = "Senior Software Engineer · MS Researcher · AI Systems Builder";
 const location = "Atlanta, GA, USA";
 ---
 <BaseLayout title={`${name} — Home`}>
-  <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+  <div class="mt-6 sm:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 items-start">
     <div class="lg:col-span-7">
       
       <p class="mt-2 text-lg text-slate-700">{title}</p>
@@ -26,22 +26,22 @@ const location = "Atlanta, GA, USA";
 
       <div class="mt-6 flex flex-wrap gap-3">
       <a href="/cv.pdf" target="_blank"
-   class="inline-flex items-center rounded-xl bg-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
+   class="inline-flex items-center rounded-xl bg-brand-800 px-4 sm:px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
   Download CV
 </a>
-        <a href="/research" class="inline-flex items-center rounded-xl border border-brand-200 bg-white px-5 py-2.5 text-sm font-semibold text-brand-900 hover:bg-brand-50">
+        <a href="/research" class="inline-flex items-center rounded-xl border border-brand-200 bg-white px-4 sm:px-5 py-2.5 text-sm font-semibold text-brand-900 hover:bg-brand-50">
           Publications
         </a>
-        <a href="/projects" class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-50">
+        <a href="/projects" class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 sm:px-5 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-50">
           Projects
         </a>
-        <a href="/contact" class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-50">
+        <a href="/contact" class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 sm:px-5 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-50">
           Contact
         </a>
       </div>
 
-      <div class="mt-10 rounded-2xl border border-brand-200 bg-brand-50 p-6">
-  <h3 class="font-semibold text-brand-900 mb-3">What I’m known for</h3>
+      <div class="mt-10 rounded-2xl border border-brand-200 bg-brand-50 p-5 sm:p-6">
+  <h3 class="font-semibold text-brand-900 mb-3">What I'm known for</h3>
   <ul class="list-disc pl-5 space-y-2 text-sm text-slate-800">
     <li>8+ years shipping high-traffic mobile products (including PayPay).</li>
     <li>AI, computer vision, and NLP research & production engineering.</li>
@@ -50,7 +50,7 @@ const location = "Atlanta, GA, USA";
 </div>
 
 
-     <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+     <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-soft">
   <h3 class="font-semibold text-brand-900 mb-4">Skills</h3>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 text-sm">
@@ -88,8 +88,8 @@ const location = "Atlanta, GA, USA";
     </div>
 
     <div class="lg:col-span-5">
-<img src="/profile.jpg" alt="Md Istiak Morsalin" class="rounded-2xl shadow-soft mb-4"/>
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+<img src="/profile.jpg" alt="Md Istiak Morsalin" class="rounded-2xl shadow-soft mb-4 w-full"/>
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-soft">
         <h3 class="font-semibold text-brand-900">Quick links</h3>
         <ul class="mt-2 text-slate-700 space-y-2 text-sm">
   <li>
@@ -138,14 +138,14 @@ const location = "Atlanta, GA, USA";
 
   <Section title="Highlights">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-soft">
         <h3 class="font-semibold text-slate-900">Research</h3>
         <p class="mt-2 text-sm text-slate-700">
           WebGPU-optimized inference, privacy policy analysis using knowledge graphs, and applied NLP.
         </p>
         <a class="mt-4 inline-block text-sm font-semibold text-brand-800 hover:text-brand-700" href="/research">See publications →</a>
       </div>
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-soft">
         <h3 class="font-semibold text-slate-900">Engineering</h3>
         <p class="mt-2 text-sm text-slate-700">
           Flutter, iOS/Android, Django/Spring Boot, microservices, cloud deployment, and MLOps.
