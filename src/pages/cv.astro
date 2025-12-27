@@ -1,13 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PdfViewer from "../components/PdfViewer.astro";
 ---
+
 <BaseLayout title="CV — Md Istiak Morsalin">
   <h1 class="mt-8 text-3xl font-semibold tracking-tight text-brand-900">Curriculum Vitae</h1>
-  <p class="mt-3 text-slate-700">
-    Download: <a class="font-semibold text-brand-800 hover:text-brand-700" href="/cv.pdf" target="_blank" rel="noreferrer">cv.pdf</a>
-  </p>
 
-  <div class="mt-6 rounded-2xl border border-slate-200 overflow-hidden shadow-soft bg-white">
-    <iframe title="CV" src="/cv.pdf" class="w-full" style="height: 78vh;"></iframe>
-  </div>
+  <a href="/cv.pdf" target="_blank"
+     class="inline-block mt-4 rounded-xl bg-brand-800 px-5 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
+     Download CV
+  </a>
+
+  <PdfViewer />
 </BaseLayout>

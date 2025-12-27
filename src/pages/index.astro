@@ -12,9 +12,7 @@ const location = "Atlanta, GA, USA";
 <BaseLayout title={`${name} — Home`}>
   <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
     <div class="lg:col-span-7">
-      <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight text-brand-900">
-        {name}
-      </h1>
+      
       <p class="mt-2 text-lg text-slate-700">{title}</p>
       <p class="mt-2 text-sm text-slate-500">{location}</p>
 
@@ -24,11 +22,13 @@ const location = "Atlanta, GA, USA";
         <span class="font-medium text-brand-900">efficient inference</span>.
         I have 8+ years of experience shipping production apps across Android, iOS, Flutter, and cloud platforms.
       </p>
+      
 
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="/cv" class="inline-flex items-center rounded-xl bg-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
-          View CV
-        </a>
+      <a href="/cv.pdf" target="_blank"
+   class="inline-flex items-center rounded-xl bg-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
+  Download CV
+</a>
         <a href="/research" class="inline-flex items-center rounded-xl border border-brand-200 bg-white px-5 py-2.5 text-sm font-semibold text-brand-900 hover:bg-brand-50">
           Publications
         </a>
@@ -39,6 +39,16 @@ const location = "Atlanta, GA, USA";
           Contact
         </a>
       </div>
+
+      <div class="mt-10 rounded-2xl border border-brand-200 bg-brand-50 p-6">
+  <h3 class="font-semibold text-brand-900 mb-3">What I’m known for</h3>
+  <ul class="list-disc pl-5 space-y-2 text-sm text-slate-800">
+    <li>8+ years shipping high-traffic mobile products (including PayPay).</li>
+    <li>AI, computer vision, and NLP research & production engineering.</li>
+    <li>Clean architectures, testing discipline, CI/CD, and pragmatic delivery.</li>
+  </ul>
+</div>
+
 
      <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
   <h3 class="font-semibold text-brand-900 mb-4">Skills</h3>
@@ -72,7 +82,7 @@ const location = "Atlanta, GA, USA";
     <div>Xcode, VSCode, Jupyter, Google Colab</div>
   </div>
 
-  <GitHubStats />
+
 </div>
 
     </div>
@@ -81,31 +91,47 @@ const location = "Atlanta, GA, USA";
 <img src="/profile.jpg" alt="Md Istiak Morsalin" class="rounded-2xl shadow-soft mb-4"/>
       <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
         <h3 class="font-semibold text-brand-900">Quick links</h3>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a class="hover:text-brand-700" href="mailto:anik.cse@gmail.com">anik.cse@gmail.com</a></li>
-          <li><a class="hover:text-brand-700" href="https://github.com/Istiakmorsalin" target="_blank" rel="noreferrer">github.com/Istiakmorsalin</a></li>
-          <li><a class="hover:text-brand-700" href="#" target="_blank" rel="noreferrer">LinkedIn (add link)</a></li>
-          <li><a class="hover:text-brand-700" href="#" target="_blank" rel="noreferrer">Google Scholar (add link)</a></li>
-        </ul>
+        <ul class="mt-2 text-slate-700 space-y-2 text-sm">
+  <li>
+    <a class="hover:text-brand-700 font-medium" href="https://github.com/Istiakmorsalin" target="_blank" rel="noreferrer">
+      GitHub
+    </a>
+  </li>
+
+  <li>
+    <a class="hover:text-brand-700 font-medium" href="https://www.linkedin.com/in/istiakmorsalin/" target="_blank" rel="noreferrer">
+      LinkedIn
+    </a>
+  </li>
+
+  <li>
+    <a class="hover:text-brand-700 font-medium" href="https://scholar.google.com/citations?hl=en&user=_g89MBgAAAAJ" target="_blank" rel="noreferrer">
+      Google Scholar
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-brand-700 font-medium" href="https://stackoverflow.com/users/31774877/md-istiak-morsalin" target="_blank" rel="noreferrer">
+      Stack Overflow
+    </a>
+  </li>
+
+  <li>
+    <a class="hover:text-brand-700 font-medium" href="https://istiakmorsalin.medium.com/" target="_blank" rel="noreferrer">
+      Medium
+    </a>
+  </li>
+</ul>
+
 
         <div class="mt-6 border-t border-slate-200 pt-5">
           <h4 class="text-sm font-semibold text-slate-900">Currently</h4>
           <p class="mt-2 text-sm text-slate-700">
-            Graduate Teaching Assistant, Kennesaw State University (Aug 2025 – Present).
+            Graduate Research Assistant, Kennesaw State University (Aug 2025 – Present).
           </p>
           <p class="mt-2 text-sm text-slate-700">
             Building healthcare and ML systems (Flutter + Django) and doing applied ML research.
           </p>
         </div>
-      </div>
-
-      <div class="mt-6 rounded-2xl border border-brand-200 bg-brand-50 p-6">
-        <h3 class="font-semibold text-brand-900">What I’m known for</h3>
-        <ul class="mt-3 text-sm text-slate-700 space-y-2 list-disc pl-5">
-          <li>8+ years shipping high-traffic mobile products (incl. PayPay).</li>
-          <li>AI + computer vision + NLP research and engineering.</li>
-          <li>Clean architectures, testing, CI/CD, and pragmatic delivery.</li>
-        </ul>
       </div>
     </div>
   </div>
